@@ -5,7 +5,7 @@
 	
 
 	myName=input("Enter Your name: ")
-	print("\nWelcome, " + myName)
+	print("Welcome, " + myName)
 	choice="yes"
 	score=0
 	while(True):
@@ -16,7 +16,7 @@
 	    guessesTaken = 0
 	    number = random.randint(upper,lower)
 	    while guessesTaken < 3:
-	        print("\nTake a guess.") #There are four spaces in front of print.
+	        print("Take a guess.") #There are four spaces in front of print.
 	        guess = input()
 	        guess = int(guess)
 	
@@ -25,9 +25,9 @@
 	
 
 	        if guess < number:
-	            print("\nHave one more try, Your guess is too low.") # There are eight space in front of print.
+	            print("Have one more try, Your guess is too low.") # There are eight space in front of print.
 	        elif guess > number:
-	            print("\nHave one more try, Your guess is too high.")
+	            print("Have one more try, Your guess is too high.")
 	        else:
 	            break
 	
@@ -40,6 +40,6 @@
 
 	    else: 
 	        number = str(number)
-	        print("\nBetter Luck next time")        
+	        print("Better Luck next time")        
 	    print("Score is %d"%score)
 	    choice=input("Do you want to play again? yes-no :")
